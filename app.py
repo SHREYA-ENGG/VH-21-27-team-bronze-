@@ -13,8 +13,7 @@ def Twitter(usr,pwd,path,desc,speed):
         #USERNAME
         usr_box = driver.find_element_by_class_name('js-username-field')
         #sending username
-        usr_box.send_keys(usr)
-        #PASSWORD
+        usr_box.send_keys(usr)       #PASSWORD
         pwd_box = driver.find_element_by_class_name('js-password-field')
         #sending password
         pwd_box.send_keys(pwd)
@@ -170,4 +169,4 @@ def go():
         '''
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80,debug=True,threaded=True)
+    app.run(host='127.0.0.1', port=5000,debug=True,threaded=True)
